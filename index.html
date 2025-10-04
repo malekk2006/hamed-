@@ -5,50 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hamed Farwana</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <!-- الهيدر -->
   <header>
     <div class="logo">Hamed <span>Farwana</span></div>
-    <div class="menu-toggle" id="menuToggle">☰</div>
+    
     <nav id="navMenu">
-      <a href="#projects">My Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+      <a href="#projects" data-en="My Work" data-ar="أعمالي">My Work</a>
+      <a href="#about" data-en="About" data-ar="من أنا">About</a>
+      <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
     </nav>
+    
+    <div class="actions">
+      <button id="langToggle">AR</button>
+      <button id="themeToggle">🌙</button>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+    </div>
   </header>
 
-  <!-- قسم البداية -->
-  <section class="hero">
-    <h1>أنا <span>حامد فروانة</span></h1>
-    <p>خطاط عربي ✍️ أصنع الفن من الحروف</p>
+  <!-- الواجهة -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1 data-en="I am Hamed Farwana" data-ar="أنا حامد فروانة">I am Hamed Farwana</h1>
+      <p data-en="Arabic Calligrapher ✍️ Creating art from letters" data-ar="خطاط عربي ✍️ أصنع الفن من الحروف">
+        Arabic Calligrapher ✍️ Creating art from letters
+      </p>
+      <a href="#projects" class="btn" data-en="View My Work" data-ar="شاهد أعمالي">View My Work</a>
+    </div>
   </section>
 
   <!-- مشاريعي -->
   <section id="projects" class="projects">
-    <h2>أعمالي</h2>
+    <h2 data-en="My Projects" data-ar="أعمالي">My Projects</h2>
     <div class="project-grid">
       <div class="project-card">
         <img src="images/work1.jpg" alt="Project 1">
-        <p>لوحة خط عربي</p>
+        <div class="overlay"><p data-en="Arabic Calligraphy" data-ar="لوحة خط عربي">Arabic Calligraphy</p></div>
       </div>
       <div class="project-card">
         <img src="images/work2.jpg" alt="Project 2">
-        <p>فن زخرفي</p>
+        <div class="overlay"><p data-en="Decorative Art" data-ar="فن زخرفي">Decorative Art</p></div>
       </div>
       <div class="project-card">
         <img src="images/work3.jpg" alt="Project 3">
-        <p>تصميم مميز</p>
+        <div class="overlay"><p data-en="Unique Design" data-ar="تصميم مميز">Unique Design</p></div>
       </div>
     </div>
   </section>
 
   <!-- تواصل -->
   <section id="contact" class="contact">
-    <h2>تواصل معي</h2>
-    <a href="https://www.instagram.com/dr.arabic_calligraphy" target="_blank">📸 Instagram</a>
-    <a href="https://wa.me/97259XXXXXXX" target="_blank">💬 WhatsApp</a>
-    <a href="mailto:hamed@example.com">📧 Email</a>
+    <h2 data-en="Contact Me" data-ar="تواصل معي">Contact Me</h2>
+    <div class="social">
+      <a href="https://www.instagram.com/dr.arabic_calligraphy" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://wa.me/97259XXXXXXX" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="mailto:hamed@example.com">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+    </div>
   </section>
 
   <script src="main.js"></script>
