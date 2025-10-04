@@ -1,4 +1,4 @@
-/* Fonts & Base */
+/* Base */
 body {
   margin: 0;
   font-family: 'Cairo', sans-serif;
@@ -25,12 +25,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 15px 25px;
   z-index: 1000;
 }
 
 header .logo h1 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 header .logo span {
@@ -47,6 +47,14 @@ nav a {
   border: none;
   font-size: 20px;
   cursor: pointer;
+  margin-left: 15px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 /* Hero */
@@ -71,14 +79,14 @@ nav a {
 }
 
 .hero h2 {
-  font-size: 50px;
+  font-size: 45px;
   color: #ffcc00;
   animation: fadeIn 3s ease-in-out;
 }
 
 .hero p {
   margin: 20px 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .btn {
@@ -218,4 +226,26 @@ body.light .btn {
 
 body.light .socials a {
   color: #111;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: rgba(0,0,0,0.95);
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    display: none;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
