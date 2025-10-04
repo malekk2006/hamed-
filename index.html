@@ -1,37 +1,77 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hamed Farwana | Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamed Farwana</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome للأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <div class="logo">Hamed Farwana</div>
-      <button class="menu-toggle">☰</button>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="controls">
-        <button id="theme-toggle">🌙</button>
-        <button id="lang-toggle">AR</button>
-      </div>
+  <!-- الهيدر -->
+  <header>
+    <div class="logo">Hamed <span>Farwana</span></div>
+
+    <nav id="navMenu">
+      <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+      <a href="#projects" data-en="Projects" data-ar="أعمالي">Projects</a>
+      <a href="#about" data-en="About" data-ar="من أنا">About</a>
+      <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
     </nav>
-    <div class="hero-content">
-      <h1>Welcome to My Creative Space</h1>
-      <p>Designs that inspire. Code that delivers. Passion that drives.</p>
-      <div class="social-icons">
-        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" /></a>
-        <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn" /></a>
-        <a href="#"><img src="assets/icons/github.svg" alt="GitHub" /></a>
-      </div>
+
+    <div class="actions">
+      <button id="langToggle">AR</button>
+      <button id="themeToggle">🌙</button>
+      <div class="menu-toggle" id="menuToggle">☰</div>
     </div>
   </header>
 
-  <script src="assets/js/main.js"></script>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text" data-aos="fade-up">
+      <h1 data-en="I am Hamed Farwana" data-ar="أنا حامد فروانة">I am Hamed Farwana</h1>
+      <p id="typed-text"></p>
+      <a href="#projects" class="btn" data-en="See My Work" data-ar="شاهد أعمالي">See My Work</a>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2 data-en="My Projects" data-ar="أعمالي">My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" data-aos="zoom-in"><img src="assets/projects/work1.jpg"><div class="overlay">Art 1</div></div>
+      <div class="project-card" data-aos="zoom-in"><img src="assets/projects/work2.jpg"><div class="overlay">Art 2</div></div>
+      <div class="project-card" data-aos="zoom-in"><img src="assets/projects/work3.jpg"><div class="overlay">Art 3</div></div>
+      <div class="project-card" data-aos="zoom-in"><img src="assets/projects/work4.webp"><div class="overlay">Art 4</div></div>
+      <div class="project-card" data-aos="zoom-in"><img src="assets/projects/work5.jpg"><div class="overlay">Art 5</div></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2 data-en="About Me" data-ar="من أنا">About Me</h2>
+    <p data-en="I am Hamed Farwana, a passionate Arabic calligrapher creating modern and traditional calligraphy art."
+       data-ar="أنا حامد فروانة، خطاط عربي شغوف، أصنع فنون الخط العربي الحديثة والتقليدية.">
+       I am Hamed Farwana, a passionate Arabic calligrapher creating modern and traditional calligraphy art.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2 data-en="Contact Me" data-ar="تواصل معي">Contact Me</h2>
+    <div class="social">
+      <a href="https://www.instagram.com/dr.arabic_calligraphy" target="_blank" class="insta"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/97259XXXXXXX" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:hamed@example.com" class="mail"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
