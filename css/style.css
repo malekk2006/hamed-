@@ -130,7 +130,28 @@ header nav button {
   transform: translateY(0);
 }
 
-.about, .contact {
+.about, .contact {/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark header {
+  background: #000;
+}
+
+body.dark .projects {
+  background: #1e1e1e;
+}
+
+body.dark .card-info {
+  background: rgba(0,0,0,0.8);
+}
+
+body.dark footer {
+  background: #000;
+}
+
   padding: 50px;
   text-align: center;
 }
