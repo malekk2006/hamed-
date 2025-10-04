@@ -1,75 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamed Farwana</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamed Farwana | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">Hamed <span>Farwana</span></div>
-
-    <nav id="navMenu">
-      <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
-      <a href="#projects" data-en="Projects" data-ar="أعمالي">Projects</a>
-      <a href="#about" data-en="About" data-ar="من أنا">About</a>
-      <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Hamed Farwana</div>
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="controls">
+        <button id="theme-toggle">🌙</button>
+        <button id="lang-toggle">AR</button>
+      </div>
     </nav>
-
-    <div class="actions">
-      <button id="langToggle">AR</button>
-      <button id="themeToggle">🌙</button>
-      <div class="menu-toggle" id="menuToggle">☰</div>
+    <div class="hero-content">
+      <h1>Welcome to My Creative Space</h1>
+      <p>Designs that inspire. Code that delivers. Passion that drives.</p>
+      <div class="social-icons">
+        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn" /></a>
+        <a href="#"><img src="assets/icons/github.svg" alt="GitHub" /></a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1 data-en="I am Hamed Farwana" data-ar="أنا حامد فروانة">I am Hamed Farwana</h1>
-      <p data-en="Arabic Calligraphy Artist ✍️ Turning letters into art"
-         data-ar="فنان خط عربي ✍️ أحول الحروف إلى فن">
-         Arabic Calligraphy Artist ✍️ Turning letters into art
-      </p>
-      <a href="#projects" class="btn" data-en="See My Work" data-ar="شاهد أعمالي">See My Work</a>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="projects">
-    <h2 data-en="My Projects" data-ar="أعمالي">My Projects</h2>
-    <div class="project-grid">
-      <div class="project-card"><img src="assets/projects/work1.jpg"><div class="overlay">Art 1</div></div>
-      <div class="project-card"><img src="assets/projects/work2.jpg"><div class="overlay">Art 2</div></div>
-      <div class="project-card"><img src="assets/projects/work3.jpg"><div class="overlay">Art 3</div></div>
-      <div class="project-card"><img src="assets/projects/work4.webp"><div class="overlay">Art 4</div></div>
-      <div class="project-card"><img src="assets/projects/work5.jpg"><div class="overlay">Art 5</div></div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="about">
-    <h2 data-en="About Me" data-ar="من أنا">About Me</h2>
-    <p data-en="I am Hamed Farwana, a passionate Arabic calligrapher creating modern and traditional calligraphy art."
-       data-ar="أنا حامد فروانة، خطاط عربي شغوف، أصنع فنون الخط العربي الحديثة والتقليدية.">
-       I am Hamed Farwana, a passionate Arabic calligrapher creating modern and traditional calligraphy art.
-    </p>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2 data-en="Contact Me" data-ar="تواصل معي">Contact Me</h2>
-    <div class="social">
-      <a href="https://www.instagram.com/dr.arabic_calligraphy" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/97259XXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="mailto:hamed@example.com"><i class="fas fa-envelope"></i></a>
-    </div>
-  </section>
-
-  <script src="js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
