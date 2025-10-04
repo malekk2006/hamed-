@@ -1,24 +1,17 @@
-// Toggle menu
-const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.getElementById("navMenu");
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-  menuToggle.textContent = navMenu.classList.contains("active") ? "✖" : "☰";
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const themeToggle = document.getElementById('theme-toggle');
+const langToggle = document.getElementById('lang-toggle');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
 });
 
-// Toggle theme
-const themeToggle = document.getElementById("themeToggle");
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-  themeToggle.textContent = document.body.classList.contains("light") ? "🌙" : "☀️";
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  themeToggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
 });
 
-// Toggle language
-const langToggle = document.getElementById("langToggle");
-langToggle.addEventListener("click", () => {
-  const isArabic = langToggle.textContent === "EN";
-  document.querySelectorAll("[data-en]").forEach(el => {
-    el.textContent = isArabic ? el.dataset.en : el.dataset.ar;
-  });
-  langToggle.textContent = isArabic ? "AR" : "EN";
+langToggle.addEventListener('click', () => {
+  langToggle.textContent = langToggle.textContent === 'AR' ? 'EN' : 'AR';
 });
